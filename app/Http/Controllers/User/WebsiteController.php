@@ -10,7 +10,11 @@ use Illuminate\Http\Request;
 class WebsiteController extends Controller
 {
     public function index(){
-        $categories = Category::with('product')->inRandomOrder()->take(2)->get();
+        $categories = Category::whereHas('product')
+        ->with('product') // Eager load products for each category
+        ->inRandomOrder()
+        ->take(2)
+        ->get();
         $products = Product::inRandomOrder()->paginate(50);
         return view('website.home',compact('categories','products'));
     }

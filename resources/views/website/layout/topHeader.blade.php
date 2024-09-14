@@ -23,8 +23,12 @@
 
                                             <div class="setting ht-setting">
                                                 <ul class="ht-setting-list">
-                                                    <li><a href="login-register.html">My Account</a></li>
+                                                    @if (Auth::check())
+                                                    <li><a href="{{ route('user.profile', auth()->user()->id) }}">My Account</a></li>
                                                     <li><a href="checkout.html">Checkout</a></li>
+                                                    @endif
+
+
 
                                                     @if (Auth::check())
                                                     <li>

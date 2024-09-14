@@ -28,7 +28,7 @@
           <ul class="br-menu-sub">
             <li class="sub-item"><a href="{{ route('admin.orders') }}" class="sub-link">Orders</a></li>
             <li class="sub-item"><a href="{{ route('admin.order.confirm.list') }}" class="sub-link">Confirm &amp; Order List</a></li>
-            <li class="sub-item"><a href="card-listing.html" class="sub-link">Shop &amp; Listing</a></li>
+            <li class="sub-item"><a href="{{ route('admin.orders.history') }}" class="sub-link">Shop &amp; Listing</a></li>
           </ul>
         </li>
       </ul><!-- br-sideleft-menu -->

@@ -148,7 +148,7 @@ li{
     </div>
     <!-- Slider With Banner Area End Here -->
     <!-- Begin Product Area -->
-    <div class="product-area pt-60 pb-50">
+    {{-- <div class="product-area pt-60 pb-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -939,10 +939,10 @@ li{
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Product Area End Here -->
     <!-- Begin Li's Static Banner Area -->
-    <div class="li-static-banner">
+    {{-- <div class="li-static-banner">
         <div class="container">
             <div class="row">
                 <!-- Begin Single Banner Area -->
@@ -974,7 +974,7 @@ li{
                 <!-- Single Banner Area End Here -->
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Li's Static Banner Area End Here -->
     <!-- Begin Li's Laptop Product Area -->
     @foreach ($categories as $category)

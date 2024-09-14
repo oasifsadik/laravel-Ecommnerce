@@ -22,5 +22,9 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web']], function() {
         Route::post('confirm-order/{id}',[OrderController::class,'confirmOrder'])->name('admin.order.confirm');
         Route::get('confirm-order/list',[OrderController::class,'confirmOrderList'])->name('admin.order.confirm.list');
         Route::get('confirm-order/filter/{status}',[OrderController::class,'confirmOrderList'])->name('admin.order.confirm.filter');
+        Route::put('/admin/orders/{id}/update-status', [OrderController::class, 'updateOrderStatus'])->name('admin.orders.updateStatus');
+        Route::get('/admin/orders/history', [OrderController::class, 'orderHistory'])->name('admin.orders.history');
+
+
     });
 });

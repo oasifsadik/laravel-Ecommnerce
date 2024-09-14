@@ -106,7 +106,7 @@
                             <div class="hm-minicart-trigger">
                                 <span class="item-icon"></span>
                                 <span class="item-text">£
-                                    {{ number_format((float) Cart::priceTotal(), 2) }}
+                                    {{ Cart::priceTotal() }}
                                     <span class="cart-item-count">{{ Cart::count();}}</span>
                                 </span>
                             </div>
